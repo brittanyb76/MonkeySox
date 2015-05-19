@@ -9,35 +9,41 @@
 import SpriteKit
 
 class GameScene: SKScene {
-    override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-        
-        self.addChild(myLabel)
-    }
+   
+    var movingGround: BBMovingGround!
+    var hero: BBHero!
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+    
+    var isStarted = false
+    
+    
+    override func didMoveToView(view: SKView) {
+        backgroundColor = UIColor(red: 159.0/255.0, green: 201.0/255.0, blue: 244.0/255.0, alpha: 1.0)
         
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
-    }
+        let backgroundTexture = SKTexture(imageNamed: "MSBackground.png")
+        let backgroundImage = SKSpriteNode(texture: backgroundTexture, size: view.frame.size)
+        backgroundImage.position = view.center
+        addChild(backgroundImage)
+        
+        
+        //add ground
+        movingGround = BBMovingGround(size: CGSizeMake(view.frame.width, 20))
+        movingGround.position = CGPointMake(0, view.frame.size.height/2)
+        addChild(movingGround)
+
+        
+        //add hero
+        hero = BBHero()
+        hero.position = CGPointMake(70, movingGround.position.y + movingGround.frame.size.height/2 + hero.frame.size.height/2)
+        addChild(hero)
+        hero.breathe()
+    
+           }
+    
+    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+        hero.stop()
+        hero.startRunning()
+          }
    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */

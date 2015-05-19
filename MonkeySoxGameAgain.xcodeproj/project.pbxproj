@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		5F108E0C1AEFEFA300B930B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F108E0B1AEFEFA300B930B7 /* AppDelegate.swift */; };
-		5F108E0E1AEFEFA300B930B7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5F108E0D1AEFEFA300B930B7 /* GameScene.sks */; };
 		5F108E101AEFEFA300B930B7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F108E0F1AEFEFA300B930B7 /* GameScene.swift */; };
 		5F108E121AEFEFA400B930B7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F108E111AEFEFA400B930B7 /* GameViewController.swift */; };
 		5F108E151AEFEFA400B930B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F108E131AEFEFA400B930B7 /* Main.storyboard */; };
 		5F108E171AEFEFA400B930B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F108E161AEFEFA400B930B7 /* Images.xcassets */; };
 		5F108E1A1AEFEFA400B930B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F108E181AEFEFA400B930B7 /* LaunchScreen.xib */; };
 		5F108E261AEFEFA400B930B7 /* MonkeySoxGameAgainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F108E251AEFEFA400B930B7 /* MonkeySoxGameAgainTests.swift */; };
+		5F8453B11B064B4D00998997 /* Amazon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F8453B01B064B4D00998997 /* Amazon.jpg */; };
+		5F8453B31B064F0C00998997 /* Amazons.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F8453B21B064F0C00998997 /* Amazons.jpg */; };
+		5F8453B51B06606400998997 /* Amazonia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5F8453B41B06606400998997 /* Amazonia.jpg */; };
+		5FB571251B08DE5D008361D8 /* MSBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB571241B08DE5D008361D8 /* MSBackground.png */; };
+		5FECE1321AF11BBB00F4585A /* BBMovingGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECE1311AF11BBB00F4585A /* BBMovingGround.swift */; };
+		5FECE1341AF12A8200F4585A /* BBHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FECE1331AF12A8200F4585A /* BBHero.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +36,6 @@
 		5F108E061AEFEFA300B930B7 /* MonkeySoxGameAgain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonkeySoxGameAgain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F108E0A1AEFEFA300B930B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F108E0B1AEFEFA300B930B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5F108E0D1AEFEFA300B930B7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		5F108E0F1AEFEFA300B930B7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		5F108E111AEFEFA400B930B7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		5F108E141AEFEFA400B930B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,6 +44,12 @@
 		5F108E1F1AEFEFA400B930B7 /* MonkeySoxGameAgainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonkeySoxGameAgainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F108E241AEFEFA400B930B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F108E251AEFEFA400B930B7 /* MonkeySoxGameAgainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonkeySoxGameAgainTests.swift; sourceTree = "<group>"; };
+		5F8453B01B064B4D00998997 /* Amazon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amazon.jpg; sourceTree = "<group>"; };
+		5F8453B21B064F0C00998997 /* Amazons.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amazons.jpg; sourceTree = "<group>"; };
+		5F8453B41B06606400998997 /* Amazonia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Amazonia.jpg; sourceTree = "<group>"; };
+		5FB571241B08DE5D008361D8 /* MSBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MSBackground.png; sourceTree = "<group>"; };
+		5FECE1311AF11BBB00F4585A /* BBMovingGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBMovingGround.swift; sourceTree = "<group>"; };
+		5FECE1331AF12A8200F4585A /* BBHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BBHero.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				5F108E0B1AEFEFA300B930B7 /* AppDelegate.swift */,
-				5F108E0D1AEFEFA300B930B7 /* GameScene.sks */,
 				5F108E0F1AEFEFA300B930B7 /* GameScene.swift */,
+				5FECE1311AF11BBB00F4585A /* BBMovingGround.swift */,
+				5FECE1331AF12A8200F4585A /* BBHero.swift */,
 				5F108E111AEFEFA400B930B7 /* GameViewController.swift */,
 				5F108E131AEFEFA400B930B7 /* Main.storyboard */,
 				5F108E161AEFEFA400B930B7 /* Images.xcassets */,
@@ -96,6 +107,10 @@
 		5F108E091AEFEFA300B930B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5F8453B21B064F0C00998997 /* Amazons.jpg */,
+				5F8453B01B064B4D00998997 /* Amazon.jpg */,
+				5FB571241B08DE5D008361D8 /* MSBackground.png */,
+				5F8453B41B06606400998997 /* Amazonia.jpg */,
 				5F108E0A1AEFEFA300B930B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -200,8 +215,11 @@
 			files = (
 				5F108E1A1AEFEFA400B930B7 /* LaunchScreen.xib in Resources */,
 				5F108E171AEFEFA400B930B7 /* Images.xcassets in Resources */,
-				5F108E0E1AEFEFA300B930B7 /* GameScene.sks in Resources */,
+				5F8453B31B064F0C00998997 /* Amazons.jpg in Resources */,
+				5FB571251B08DE5D008361D8 /* MSBackground.png in Resources */,
 				5F108E151AEFEFA400B930B7 /* Main.storyboard in Resources */,
+				5F8453B11B064B4D00998997 /* Amazon.jpg in Resources */,
+				5F8453B51B06606400998997 /* Amazonia.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +239,9 @@
 			files = (
 				5F108E101AEFEFA300B930B7 /* GameScene.swift in Sources */,
 				5F108E121AEFEFA400B930B7 /* GameViewController.swift in Sources */,
+				5FECE1321AF11BBB00F4585A /* BBMovingGround.swift in Sources */,
 				5F108E0C1AEFEFA300B930B7 /* AppDelegate.swift in Sources */,
+				5FECE1341AF12A8200F4585A /* BBHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +435,7 @@
 				5F108E2B1AEFEFA400B930B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5F108E2C1AEFEFA400B930B7 /* Build configuration list for PBXNativeTarget "MonkeySoxGameAgainTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +444,7 @@
 				5F108E2E1AEFEFA400B930B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
