@@ -8,16 +8,22 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
    
     var movingGround: BBMovingGround!
     var hero: BBHero!
-    
+    var badguy: BBBadGuy!
     
     var isStarted = false
     
+    enum ColliderType:UInt32 {
+        case BBHero = 1
+        case BadGuy = 2
+    }
+    
     
     override func didMoveToView(view: SKView) {
+        self.physicsWorld.contactDelegate = self
         backgroundColor = UIColor(red: 159.0/255.0, green: 201.0/255.0, blue: 244.0/255.0, alpha: 1.0)
         
         let backgroundTexture = SKTexture(imageNamed: "MSBackground.png")
@@ -34,18 +40,32 @@ class GameScene: SKScene {
         
         //add hero
         hero = BBHero()
+        
         hero.position = CGPointMake(70, movingGround.position.y + movingGround.frame.size.height/2 + hero.frame.size.height/2)
         addChild(hero)
         hero.breathe()
+        
+        //add badguy
+        badguy = BBBadGuy()
+        badguy.position = CGPointMake(120, movingGround.position.y + movingGround.frame.size.height/2 + badguy.frame.size.height/2)
+        addChild(badguy)
+        }
     
-           }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    
+    func didBeginContact(contact: SKPhysicsContact) {
+        
+    }
+    
+     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         hero.stop()
         hero.startRunning()
+        badguy.startRunning()
           }
    
-    override func update(currentTime: CFTimeInterval) {
+     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
     }
+
 }
+

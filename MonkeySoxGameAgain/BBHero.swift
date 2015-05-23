@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-class BBHero: SKSpriteNode{
+class BBHero: SKSpriteNode, SKPhysicsContactDelegate{
 
     var body: SKSpriteNode!
     var arm: SKSpriteNode!
@@ -31,7 +31,7 @@ class BBHero: SKSpriteNode{
         let eyeColor = UIColor.whiteColor()
         let leftEye = SKSpriteNode(color: eyeColor, size: CGSizeMake(6,6))
         let rightEye = leftEye.copy() as! SKSpriteNode
-        let pupil = SKSpriteNode(color: UIColor                                                                                                                                                                                                                                                                                                                               .blackColor(), size: CGSizeMake(3,3))
+        let pupil = SKSpriteNode(color: UIColor.blackColor(), size: CGSizeMake(3, 3))                                                                                                                                                                                                                                                                                                                               
         
         pupil.position = CGPointMake(2,0)
         leftEye.addChild(pupil)
@@ -85,7 +85,7 @@ class BBHero: SKSpriteNode{
     }
     
         required init?(coder aDecoder: NSCoder) {
-            fatalError("init(c oder:) has not been implemented")
+            fatalError("init(coder:) has not been implemented")
     }
 
     func startRunning(){
